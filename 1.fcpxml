@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.9">
+    <resources>
+        <format id="r1" frameDuration="100/6000s" width="720" height="1280" colorSpace="1-1-1 (Rec. 709)"/>
+        <asset id="r2" name="card1" uid="C64D772E82F2AA862F011A9B8E519212" start="0s" duration="0s" hasVideo="1" format="r3" videoSources="1">
+            <media-rep kind="original-media" sig="C64D772E82F2AA862F011A9B8E519212" src="file:///Users/changqing/Movies/%E6%9C%AA%E5%91%BD%E5%90%8D.fcpbundle/2023-4-16/Original%20Media/card1.jpg">
+                <bookmark>Ym9va0wDAAAAAAQQMAAAALHUDjfqBVRNIcHrgNVN+oylLscKADZKzEFehILkpdw4SAIAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAAJAAAAAQEAAGNoYW5ncWluZwAAAAYAAAABAQAATW92aWVzAAATAAAAAQEAAOacquWRveWQjS5mY3BidW5kbGUACQAAAAEBAAAyMDIzLTQtMTYAAAAOAAAAAQEAAE9yaWdpbmFsIE1lZGlhAAAJAAAAAQEAAGNhcmQxLmpwZwAAABwAAAABBgAAEAAAACAAAAA0AAAARAAAAGAAAAB0AAAAjAAAAAgAAAAEAwAAW7gKAAAAAAAIAAAABAMAAGTBEAAAAAAACAAAAAQDAAAbwhAAAAAAAAgAAAAEAwAAvr7XCgAAAAAIAAAABAMAAM2+1woAAAAACAAAAAQDAADBwtcKAAAAAAgAAAAEAwAA0cLXCgAAAAAcAAAAAQYAAMQAAADUAAAA5AAAAPQAAAAEAQAAFAEAACQBAAAIAAAAAAQAAEHE8s5/LfqWGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAUAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAUAZeOgAAAAgAAAAABAAAQcTsS70AAAAkAAAAAQEAAEZDN0QwQTVDLTZGRDgtNDA5Qy05QkNCLUE4MjUyODU1NDBGNhgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAACgAAAAAAAAAAUQAAA0AQAAAAAAABAQAABoAQAAAAAAAEAQAABYAQAAAAAAAAIgAAA0AgAAAAAAAAUgAACkAQAAAAAAABAgAAC0AQAAAAAAABEgAADoAQAAAAAAABIgAADIAQAAAAAAABMgAADYAQAAAAAAACAgAAAUAgAAAAAAADAgAABAAgAAAAAAAAHAAACIAQAAAAAAABHAAAAgAAAAAAAAABLAAACYAQAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="sRGB IEC61966-2.1"/>
+                <md key="com.apple.proapps.studio.cameraISO" value="0"/>
+                <md key="com.apple.proapps.studio.cameraColorTemperature" value="0"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2023-04-16 15:37:50 +0800"/>
+                <md key="com.apple.proapps.spotlight.kMDItemOrientation" value="1"/>
+            </metadata>
+        </asset>
+        <format id="r3" name="FFVideoFormatRateUndefined" width="231" height="354"/>
+    </resources>
+    <library location="file:///Users/changqing/Movies/%E6%9C%AA%E5%91%BD%E5%90%8D.fcpbundle/">
+        <event name="2023-4-16" uid="7A107E10-D649-4402-9E2B-A724E7336563">
+            <project name="未命名项目" uid="D4805FBC-422B-4F08-A5D3-1347D7E7B221" modDate="2023-04-16 15:37:53 +0800">
+                <sequence format="r1" duration="24100/6000s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <video ref="r2" offset="0s" name="card1" start="3600s" duration="24100/6000s"/>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="项目" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="所有视频" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="仅音频" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="静止图像" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="个人收藏" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>
